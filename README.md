@@ -52,4 +52,4 @@ _Activation/desactivation and change type of log in console (use angularjs and c
 
 ---
 
-[U+00AE DWAPS Formation] (http://dwaps.fr "DWAPS")
+[® DWAPS Formation] (http://dwaps.fr "DWAPS")
