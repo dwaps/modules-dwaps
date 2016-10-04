@@ -51,7 +51,6 @@ _Activation/desactivation and change type of log in console (use angularjs and c
 
 			dwapsLog.show( yourObject );
 			dwapsLog.show( "Your message" );
-			dwapsLog.show( "<h1 class='dwaps-toast'>Your message</h1>" );
 	});
 
 ---
