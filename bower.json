@@ -8,7 +8,7 @@
   "description": "Simple small practical modules for the development or the production.",
   "ignore": [],
   "dependencies": {
-    "ionic": ">= 2.1.0"
+    "ionic": "^2.1.0"
   },
   "keywords": [
     "dwaps",
