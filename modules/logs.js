@@ -12,6 +12,7 @@
 * 
 * 		- Activation/désactivation du log : dwapsLog.active(true|false) (true par défaut)
 *       - Gestion du type de log : dwapsLog.setType(|'info'|'warning') ('log par défaut')
+*       - Affichage log : dwapsLog.show(""|{})
 **/
 
 

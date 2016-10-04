@@ -48,6 +48,10 @@ _Activation/desactivation and change type of log in console (use angularjs and c
 
 			dwapsLog.active( true | false );
 			dwapsLog.setType( | 'info' | 'warning' ) // By default : log
+
+			dwapsLog.show( yourObject );
+			dwapsLog.show( "Your message" );
+			dwapsLog.show( "<h1 class='dwaps-toast')Your message</h1>" );
 	});
 
 ---
