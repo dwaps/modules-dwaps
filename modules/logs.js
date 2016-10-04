@@ -1,23 +1,23 @@
 /**
-* Auteur : 	DWAPS Formation - Michael Cornillon
-* Mail : 	contact@dwaps.fr
-* Tel :		0651279211
-* Site : 	http://dwaps.fr
-* Date : 	02/10/2016
+* Auteur :  DWAPS Formation - Michael Cornillon
+* Mail :    contact@dwaps.fr
+* Tel :     0651279211
+* Site :    http://dwaps.fr
+* Date :    02/10/2016
 *
-* Module perso : 	dwapsLog
-* Description : 	Simple log en console avec possibilité d'activation ou non
+* Module perso :    dwapsLog
+* Description :     Simple log en console avec possibilité d'activation ou non et de régler le type de log
 * 
 * Utilisation : 
 * 
-* 		- Activation/désactivation du log : dwapsLog.active(true|false) (true par défaut)
+*       - Activation/désactivation du log : dwapsLog.active(true|false) (true par défaut)
 *       - Gestion du type de log : dwapsLog.setType(|'info'|'warning') ('log par défaut')
 *       - Affichage log : dwapsLog.show(""|{})
 **/
 
 
 angular
-	.module('dwapsLog', [])
+    .module('dwapsLog', [])
 
     .constant( 'LOG', {
         activate: true,
@@ -42,15 +42,15 @@ angular
 
 function dwapsLog(LOG)
 {
-	function show(mss)
-	{
+    function show(mss)
+    {
         if(LOG.activate)
         {
             if(LOG.type.INFO) console.info(mss);
             else if(LOG.type.WARNING) console.warn(mss);
             else console.log(mss);
         }
-	}
+    }
 
     function setType(type)
     {
