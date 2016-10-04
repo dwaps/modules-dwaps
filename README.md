@@ -20,14 +20,17 @@ _Activation/desactivation and change type of log in console (use angularjs and c
 
 ## Usage
 
-1/ Include modules into your index.html :	
+1/ Include modules into your index.html :
+
     <script src="modules/logs.js"></script>
     <script src="modules/toast.js"></script>
 
 2/ Add the dependencies into your angular module :
+
 	angular.module('app', ['ionic', 'dwapsToast', 'dwapsLog'])
 
 3/ Use it into your controller (or service, filter...) :
+
 	angular.controller('YourCtrl', function (dwapsLog, dwapsToast)
 	{
 		// TOASTS
@@ -49,4 +52,4 @@ _Activation/desactivation and change type of log in console (use angularjs and c
 
 ---
 
-[DWAPS Formation] (http://dwaps.fr "DWAPS")
+[U+00AE DWAPS Formation] (http://dwaps.fr "DWAPS")
