@@ -1,0 +1,28 @@
+{
+  "name": "dwaps",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dwaps/dwaps",
+  "authors": [
+    "Michael Cornillon <contact@dwaps.fr>"
+  ],
+  "description": "Simple small practical modules for the development or the production.",
+  "ignore": [],
+  "dependencies": {
+    "ionic": ">= 2.1.0"
+  },
+  "keywords": [
+    "dwaps",
+    "ionic",
+    "Michael Cornillon",
+    "modules",
+    "utilitaires",
+    "toast",
+    "logs",
+    "log",
+    "angularjs",
+    "Angular JS"
+  ],
+  "private": false,
+  "devDependencies": {
+  }
+}
