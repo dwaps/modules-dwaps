@@ -26,8 +26,9 @@ function dwapsSleep(NOW)
     function go( millis, horloge )
     {
         var timer = NOW + millis;
-        while(timer > new Date().getTime());
-
+        while(timer > NOW)
+            NOW = new Date().getTime();
+        
         if(!horloge) return;
         else
         {    
@@ -39,6 +40,7 @@ function dwapsSleep(NOW)
                 millis
             );
         }
+
         return;
     }
 
