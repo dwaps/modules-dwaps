@@ -34,7 +34,6 @@ function dwapsSleep(NOW)
             setTimeout(
                 function()
                 {
-                    console.log("ok");
                     go( millis, horloge );
                 },
                 millis
