@@ -11,22 +11,39 @@
 * Utilisation : 
 * 
 *       - dwapsSleep( 1000 ) --> "Suspension" du programme pendant 1s
+*       - dwapsSleep( 1000, true ) --> MAJ horloge toutes les 1s
 **/
 
 
 angular
     .module('dwapsSleep', [])
     .constant( 'NOW', new Date().getTime())
-    .factory('dwapsSleep', dwapsSleep)
+    .service('dwapsSleep', dwapsSleep)
 ;
 
-return function dwapsSleep(NOW)
+function dwapsSleep(NOW)
 {
-    function ( millis )
-    {        
+    function go( millis, horloge )
+    {
         var timer = NOW + millis;
-        while( timer > new Date().getTime() );
-        NOW = new Date().getTime();
-        sleep( millis );    
+        while(timer > new Date().getTime());
+
+        if(!horloge) return;
+        else
+        {    
+            setTimeout(
+                function()
+                {
+                    console.log("ok");
+                    go( millis, horloge );
+                },
+                millis
+            );
+        }
+        return;
     }
+
+    return {
+        go: go
+    };
 }
