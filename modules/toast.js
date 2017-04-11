@@ -40,8 +40,7 @@ angular
             }
     })
 
-    .service('dwapsToast', dwapsToast)
-
+    .service('dwapsToast', ["$ionicLoading", "$timeout", "TOAST", dwapsToast])
 ;
 
 

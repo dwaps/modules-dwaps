@@ -34,8 +34,7 @@ angular
             }
     })
 
-    .service('dwapsLog', dwapsLog)
-
+    .service('dwapsLog', ['LOG', dwapsLog])
 ;
 
 

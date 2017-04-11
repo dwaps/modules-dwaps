@@ -18,7 +18,7 @@
 angular
     .module('dwapsSleep', [])
     .constant( 'NOW', new Date().getTime())
-    .service('dwapsSleep', dwapsSleep)
+    .service('dwapsSleep', ['NOW', dwapsSleep])
 ;
 
 function dwapsSleep(NOW)
